@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+"""
+Module for simple pagination of a dataset
+"""
 import csv
-import math
 from typing import List
-""""""
 
 
 def index_range(page: int, page_size: int):
