@@ -1,0 +1,8 @@
+// add a new attribute to a document in school
+db.school.updateOne( 
+	{ "school": "holberton school" },
+	{
+		$set: { "adress": "972 Mission street" },
+		$currentDate: { lastModified: true }
+	}
+	)
