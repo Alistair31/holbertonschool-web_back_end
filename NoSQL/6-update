@@ -2,7 +2,6 @@
 db.school.updateOne( 
 	{ "school": "holberton school" },
 	{
-		$set: { "adress": "972 Mission street" },
-		$currentDate: { lastModified: true }
+		$set: { "address": "972 Mission street" }
 	}
 	)
