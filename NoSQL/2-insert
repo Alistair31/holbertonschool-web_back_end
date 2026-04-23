@@ -1,0 +1,6 @@
+// insert a document in school
+db.school.insertOne(
+	{
+		name: "Holberton School"
+	}
+	)
