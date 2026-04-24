@@ -3,6 +3,6 @@
 
 
 def schools_by_topic(mongo_collection, topic):
-    """"""
-    list_by_topic = mongo_collection.find({"$regex": topic})
+    """ return the list of school having a specific topic """
+    list_by_topic = mongo_collection.find({"topics": {"$elemMatch": {"$regex": topic}}})
     return list_by_topic
