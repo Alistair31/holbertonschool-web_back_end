@@ -1,0 +1,6 @@
+// delete all documents in school
+db.school.deleteMany(
+	{
+		"name": { $regex : "Holberton school"}
+	}
+	)
