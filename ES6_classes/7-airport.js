@@ -10,6 +10,9 @@ export default class Airport {
 	get code() {
 		return this._code;
 	}
+	get [Symbol.toStringTag]() {
+		return this._code;
+	}
 
 	set name(value) {
 		if (typeof(value) !== 'string') {
@@ -24,7 +27,5 @@ export default class Airport {
 		this._code = value;
 	}
 
-	get [Symbol.toStringTag]() {
-		return this._code;
-	}
+	
 }
