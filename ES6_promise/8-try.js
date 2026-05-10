@@ -1,6 +1,6 @@
 export default function divideFunction(numerator, denominator) {
 	if (denominator === 0) {
-		return Promise.reject(new Error('Cannot divide by zero'));
+		throw new Error('cannot divide by 0');
 	}
-	return Promise.resolve(numerator / denominator);
+	return numerator / denominator;
 }
