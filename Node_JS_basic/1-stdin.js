@@ -4,7 +4,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
-
+process.stdin.setEncoding('utf8');
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 rl.on('line', (answer) => {
