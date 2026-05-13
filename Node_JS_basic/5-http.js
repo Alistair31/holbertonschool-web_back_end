@@ -15,7 +15,7 @@ const app = http.createServer((req, res) => {
     countStudents(readfile)
       .then(() => {
         console.log = originalLog;
-        res.end(output);
+        res.end(output.trimEnd());
       })
       .catch((err) => {
         console.log = originalLog;
